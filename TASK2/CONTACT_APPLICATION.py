@@ -17,12 +17,15 @@ while(run!=False):
             print("Record Added Successfully\n\n")
     elif(inp==2):
         print("\n\n")
-        print("Name".center(30),end=" ")
-        print("Phone number\n".center(20))
-        for i in a:
-            print(i.center(30),end=" ")
-            print("{}".format(a[i]).center(20))
-        print('\n')
+        if(len(a)!=0):
+            print("Name".center(30),end=" ")
+            print("Phone number\n".center(20))
+            for i in a:
+                print(i.center(30),end=" ")
+                print("{}".format(a[i]).center(20))
+            print('\n')
+        else:
+            print("Contact List is Empty !! , Add Contacts \n\n")
     elif(inp==3):
         print('\n\n')
         name1=input("Enter the name :")
